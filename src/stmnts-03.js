@@ -24,7 +24,8 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectanglePerimeter(width, height) {
-  // Implementation goes here.
+  let perimeter = (2 * width) + (2 * height);
+  return (perimeter.toFixed(2));
 }
 
 /**
@@ -37,7 +38,8 @@ function rectanglePerimeter(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function rectangleArea(width, height) {
-  // Implementation goes here.
+  let area = width * height;
+  return (area.toFixed(2));
 }
 
 /**
@@ -52,7 +54,8 @@ function rectangleArea(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleCircumference(radius) {
-  // Implementation goes here.
+  let circumference = 2 * Math.PI * radius;
+  return (circumference.toFixed(2));
 }
 
 /**
@@ -64,7 +67,8 @@ function circleCircumference(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function circleArea(radius) {
-  // Implementation goes here.
+  let cArea = Math.PI * (radius ** 2);
+  return (cArea.toFixed(2));
 }
 
 /**
@@ -77,7 +81,8 @@ function circleArea(radius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function triangleArea(base, height) {
-  // Implementation goes here.
+  let tArea = 0.5 * (base * height);
+  return (tArea.toFixed(2));
 }
 
 /**
@@ -90,7 +95,8 @@ function triangleArea(base, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function pythagorean(sideA, sideB) {
-  // Implementation goes here.
+  let hypot = Math.sqrt((sideA ** 2) + (sideB ** 2));
+  return (hypot.toFixed(2));
 }
 
 /**
@@ -103,7 +109,8 @@ function pythagorean(sideA, sideB) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
  */
 function rectangleDiagonal(width, height) {
-  // Implementation goes here.
+  let diagonal = pythagorean(width, height);
+  return (diagonal);
 }
 
 /**
@@ -119,7 +126,8 @@ function rectangleDiagonal(width, height) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division
  */
 function trapezoidArea(base1, base2, height) {
-  // Implementation goes here.
+  let trArea = ((base1 + base2) / 2) * height;
+  return (trArea.toFixed(2));
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

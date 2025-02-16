@@ -19,7 +19,13 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
  */
 function isString(str) {
-  // Implementation goes here.
+  let type = typeof str;
+  if (type == "string") {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -29,7 +35,12 @@ function isString(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality
  */
 function isBlank(str) {
-  // Implementation goes here.
+  if (str === "") {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -42,7 +53,14 @@ function isBlank(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition
  */
 function sayHelloOrBye(name, num) {
-  // Implementation goes here.
+  let returnString;
+  if (num == 0) {
+    returnString = 'Hello ' + name;
+  }
+  else {
+    returnString = 'Bye ' + name;
+  }
+  return (returnString);
 }
 
 /**
@@ -53,7 +71,12 @@ function sayHelloOrBye(name, num) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality
  */
 function compareStrings(str1, str2) {
-  // Implementation goes here.
+  if (str1 === str2) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /* -------------------------------------------
@@ -67,7 +90,12 @@ function compareStrings(str1, str2) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
  */
 function isUpperCase(str) {
-  // Implementation goes here.
+  if (str === str.toUpperCase()) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -77,7 +105,12 @@ function isUpperCase(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
  */
 function isLowerCase(str) {
-  // Implementation goes here.
+  if (str === str.toLowerCase()) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -88,7 +121,12 @@ function isLowerCase(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
  */
 function hasLength(str, length) {
-  // Implementation goes here.
+  if (str.length == length) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -99,7 +137,12 @@ function hasLength(str, length) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
  */
 function startsWithSubstring(str, prefix) {
-  // Implementation goes here.
+  if (str.startsWith(prefix)) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -110,7 +153,12 @@ function startsWithSubstring(str, prefix) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
  */
 function endsWithSubstring(str, suffix) {
-  // Implementation goes here.
+  if (str.endsWith(suffix)) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -121,7 +169,12 @@ function endsWithSubstring(str, suffix) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
  */
 function containsSubstring(str, substring) {
-  // Implementation goes here.
+  if (str.includes(substring)) {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 /**
@@ -130,7 +183,12 @@ function containsSubstring(str, substring) {
  * @returns {boolean} - True if str contains only letters.
  */
 function isAlpha(str) {
-  // Implementation goes here.
+  if (str.includes("0") || str.includes("1") || str.includes("2") || str.includes("3") || str.includes("4") || str.includes("5") || str.includes("6") || str.includes("7") || str.includes("8") || str.includes("9")) {
+    return (false);
+  }
+  else {
+    return (true);
+  }
 }
 
 /**
@@ -139,7 +197,12 @@ function isAlpha(str) {
  * @returns {boolean} - True if str contains only digits.
  */
 function containsOnlyDigits(str) {
-  // Implementation goes here.
+  if (isNaN(str * 4)) {
+    return (false);
+  }
+  else {
+    return (true);
+  }
 }
 
 /**
@@ -149,7 +212,12 @@ function containsOnlyDigits(str) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
  */
 function isEmptyOrWhitespace(str) {
-  // Implementation goes here.
+  if (str.trim() === "") {
+    return (true);
+  }
+  else {
+    return (false);
+  }
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

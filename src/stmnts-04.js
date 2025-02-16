@@ -23,7 +23,8 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function fahrenheitToCelsius(fahrenheit) {
-  // Implementation goes here.
+  let fahrenheitToCelsius = ((fahrenheit - 32) * 5) / 9;
+  return (fahrenheitToCelsius.toFixed(2));
 }
 
 /**
@@ -36,7 +37,8 @@ function fahrenheitToCelsius(fahrenheit) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function celsiusToFahrenheit(celsius) {
-  // Implementation goes here.
+  let celsiusToFahrenheit = (celsius * (9 / 5)) + 32;
+  return (celsiusToFahrenheit.toFixed(2));
 }
 
 /**
@@ -48,7 +50,8 @@ function celsiusToFahrenheit(celsius) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function kelvinToCelsius(kelvin) {
-  // Implementation goes here.
+  let kelvinToCelsius = kelvin - 273.15;
+  return (kelvinToCelsius.toFixed(2));
 }
 
 /**
@@ -60,7 +63,8 @@ function kelvinToCelsius(kelvin) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
  */
 function celsiusToKelvin(celsius) {
-  // Implementation goes here.
+  let celsiusToKelvin = celsius + 273.15;
+  return (celsiusToKelvin.toFixed(2));
 }
 
 // DO NOT EDIT THE FOLLOWING EXPORT STATEMENT.

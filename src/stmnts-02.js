@@ -21,7 +21,12 @@
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
  */
 function absoluteDifference(a, b) {
-  // Implementation goes here.
+  if (a - b < 0) {
+    return (-(a - b));
+  }
+  else {
+    return (a - b);
+  }
 }
 
 /**
@@ -32,7 +37,8 @@ function absoluteDifference(a, b) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation
  */
 function power(base, exponent) {
-  // Implementation goes here.
+  let result = base ** exponent;
+  return (result);
 }
 
 /**
@@ -42,7 +48,8 @@ function power(base, exponent) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function convertMinutesToSeconds(minutes) {
-  // Implementation goes here.
+  let seconds = minutes * 60;
+  return (seconds);
 }
 
 /**
@@ -52,7 +59,8 @@ function convertMinutesToSeconds(minutes) {
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication
  */
 function convertHoursToSeconds(hours) {
-  // Implementation goes here.
+  let hSeconds = hours * 3600;
+  return (hSeconds);
 }
 
 // DO NOT MODIFY THE EXPORTS BELOW.
